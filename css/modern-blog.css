@@ -86,7 +86,7 @@
 }
 
 .card__container--closed .card__title {
-	color: #fff;
+	color: rgb(250, 246, 246);
 }
 
 .card__subtitle {
@@ -356,3 +356,23 @@ a:focus {
 	-webkit-transform: scale(1)!important;
 	transform: scale(1)!important;
 }
+
+/* Luana adicionando overlay */
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+	color: white;
+	font-size: 20px;
+	opacity:1;
+	transition: .5s ease;
+	color: #f1f1f1;
+	width: 100%;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	bottom: 0;	
+  }
+  
+  /* When you mouse over the container, fade in the overlay title 
+  .container: .overlay {
+	opacity: 1;
+  }*/
