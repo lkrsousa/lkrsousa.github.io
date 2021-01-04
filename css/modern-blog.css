@@ -87,6 +87,8 @@
 
 .card__container--closed .card__title {
 	color: rgb(250, 246, 246);
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
 }
 
 .card__subtitle {
@@ -367,8 +369,6 @@ a:focus {
 	transition: .5s ease;
 	color: #f1f1f1;
 	width: 100%;
-	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.5); /* Black see-through */
 	bottom: 0;	
   }
   
