@@ -1,5 +1,6 @@
 ---
 title: Luana Sousa -
+comments: true
 ---
 
 <!DOCTYPE html>
@@ -72,11 +73,27 @@ title: Luana Sousa -
                                 <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
                             </div>
                             {{ post.content }}
+                            {% if page.comments %}
+                                <div id="disqus_thread"></div>
+                                <script>
+                                (function()
+                                {
+                                    var disqus_shortname = 'https-lkrsousa-github-io';
+                                    var disqus_title = '{{page.title}}';
+                                    var disqus_url = '{{page.url}}';
+                                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                                    var ldr = document.getElementById('disqus_loader');
+                                })();
+                                </script>
+                                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
             </div>
-	    {% endfor %}
+        {% endfor %}
             <!-- /cards -->
         </div>
     </div>
