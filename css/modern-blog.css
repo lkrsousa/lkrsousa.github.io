@@ -229,23 +229,28 @@ body.body--hidden .header {
 	transition: opacity 300ms ease-in-out;
 }
 
-a {
-	text-decoration: none;
-	color: #de6551;
-	outline: none;
-}
 
-a:hover,
+/* mouse over link */
+a:hover {
+	color: hotpink;
+  }
+
+  /* selected link */
+a:active {
+	color: blue;
+  }
+
 a:focus {
 	color: #3b393d;
 }
 
+/* visited link */
+a:visited {
+	color: hotpink;
+  }
+
 .body {
 	background: #acaad1;
-}
-
-.body a {
-	color: #4f4c4c;
 }
 
 .body .header h1 span {
@@ -281,13 +286,15 @@ a:focus {
 }
 /* Top Navigation Style */
 
-.links {
+.logo {
 	margin: 2em 0 0;
+	
 }
 
-.links a {
+.logo a {
 	display: inline-block;
 	margin: 0 .5em;
+	color: #4f4c4c;
 }
 
 /* cards wrapper and close btn */
