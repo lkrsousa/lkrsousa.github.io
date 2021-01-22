@@ -3,5 +3,5 @@ title: Luana Sousa
 description: Aqui você vai encontrar counteúdo sobre tecnologia e engenharia de dados
 keywords: TI, woman, Tecnologia, Data Science, Comunidade
 author: Luana Sousa
-baseurl: "https://lkrsousa.github.io/" # the subpath of your site, e.g. /blog/
-url: "https://lkrsousa.github.io/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://lkrsousa.github.io" # the base hostname & protocol for your site
